@@ -1,0 +1,2 @@
+import type { Project } from "@/types/project";
+export function ProjectDetails({ project }: { project: Project }) { return <section className="project-story pad"><p className="eyebrow">Project anatomy</p><div><div className="story-block"><p className="eyebrow">01 / Challenge</p><p>{project.challenge}</p></div><div className="story-block"><p className="eyebrow">02 / Approach</p><p>{project.approach}</p></div><div className="story-block"><p className="eyebrow">03 / Outcome</p><p>{project.outcome}</p></div></div></section>; }

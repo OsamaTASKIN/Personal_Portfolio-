@@ -1,0 +1,1 @@
+export function Marquee({ children }: { children: React.ReactNode }) { return <div aria-label={typeof children === "string" ? children : undefined} style={{ overflow: "hidden", whiteSpace: "nowrap" }}><div style={{ display: "inline-flex", gap: "2rem" }}>{children}<span aria-hidden="true">{children}</span></div></div>; }
